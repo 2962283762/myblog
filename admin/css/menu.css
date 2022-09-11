@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#left{
+    width: 200px;
+    height: 100%;
+    background-color: #e8ecef;
+    float: left;
+}
+li{
+    list-style: none;
+    border: 1px solid #0a0a0a;
+    width: 200px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(120, 29, 29);
+}
+.layui-body{
+    margin-left: 200px;
+    height: 100%;
+}
+iframe{
+float: right;
+}
+form{
+    float: left;
+}
