@@ -1,0 +1,115 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(70deg, #da927c, #ffddb7);
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: rgba(205,207,212.0.2);
+    color: aliceblue;
+    justify-content: space-between;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+
+}
+.content img{
+    width: 100%;
+    height: 100%;
+}
+.source{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    color: aliceblue;
+}
+.article{
+    width:700px;
+    height: 200px;
+    background-color: rgba(250, 246, 246, 0.3);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+    justify-self: space-between;
+    margin-top: 30px;
+    
+
+}
+.article_img img{
+
+    border-radius: 30px 0 0 30px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.article:hover{
+    width: (1*1.1)px;
+    height: (1*1.1)px;
+    
+}
+ul{
+    display: flex;
+
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.header div:hover{
+    background-color: #14567d;
+    border-radius: 5px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(205,207,212.0.2);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#float_p{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(205,207,212.0.2);
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-size: 40px;
+}
+.a_class{
+    margin-top: 20px;
+}

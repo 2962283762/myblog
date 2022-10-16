@@ -1,8 +1,8 @@
 <?php
 if(!isset($_COOKIE['username']))
 {
-    echo ("去你妈的");
-    header("Location: login.html");
+    die ("去你妈的");
+    // header("Location: login.html");
 }
 
 
@@ -12,7 +12,7 @@ if(!isset($_COOKIE['username']))
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./static/css/style.css">
-    <title>网站后台模板</title>
+    <title>网站后台</title>
 </head>
 <style>
     /*********** 声明公共元素样式 ***********/
@@ -124,10 +124,10 @@ main article footer p {
         <nav role="user">
             <ul>
                 <li>欢迎管理员:<strong>admin</strong></li>
-                <li><a href="modify_pass.html" target="main">修改密码</a></li>
+                <li><a href="modify_pass.php" target="main">修改密码</a></li>
                 <li><a href="<?php
-                    
-                    ?>" onclick="logout()">退出登录</a></li>
+                
+                    ?>">退出登录</a></li>
             </ul>
         </nav>
     </div>
@@ -158,7 +158,7 @@ main article footer p {
 <script>
     function logout() {
         if (window.confirm('是否退出?')) {
-            window.location.href = 'login.html';
+            window.location.href = '/login.html';
         } else {
             return false;
         }

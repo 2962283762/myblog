@@ -11,14 +11,12 @@
         <div id="form">
             <h5>管理员登录</h5>
             <form action="server.php" method="post">
-                <div>
-                    <label for="username">用户名:</label>
-                   <input type="text" name="username" id="username">
-                </div>
-                <div>
-                    <label for="password">密码:</label>
-                   <input type="password" name="password" id="password">
-                </div>
+                <table style="margin-left: 20%;">
+                    <tr><td><label for="username">用户名:</label></td><td><input type="text" name="username" id="username"></td></tr>
+                    <tr><td> <label for="password">密码:</label></td><td><input type="password" name="password" id="password"></td></tr>
+
+
+                </table>
                 
                 <div>
                     <input type="submit" value="登录" id="submit" style="background-color: #FF9966;">
